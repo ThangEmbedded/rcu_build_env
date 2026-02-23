@@ -50,9 +50,9 @@ cd universal_io
 
 ### 2. Configure project
 ```sh
-cmake -S . -B build ^
-	-G Ninja ^
-	-DCMAKE_TOOLCHAIN_FILE=toolchain.cmake ^
+cmake -S . -B build `
+	-G Ninja `
+	-DCMAKE_TOOLCHAIN_FILE="$PWD/toolchain.cmake" `
 	-DCMAKE_BUILD_TYPE=Debug
 ```
 
