@@ -1,0 +1,3 @@
+F:/ThangHD/Firmware/Wichita-Building/build_env/build_system_1/CMakeFiles/universal_io_stm32g0b0.elf.dir
+F:/ThangHD/Firmware/Wichita-Building/build_env/build_system_1/CMakeFiles/edit_cache.dir
+F:/ThangHD/Firmware/Wichita-Building/build_env/build_system_1/CMakeFiles/rebuild_cache.dir
