@@ -1,0 +1,104 @@
+# General build and IDE files
+build/
+CMakeFiles/
+CMakeCache.txt
+*.swp
+*.swo
+*.swn
+*.bak
+*.tmp
+*.log
+*.user
+*.workspace
+*.DS_Store
+*.vscode/
+
+# STM32CubeMX generated files
+*.ioc
+*.mxproject
+
+# Compiled object files
+*.o
+*.obj
+*.elf
+*.bin
+*.hex
+*.map
+*.out
+*.d
+*.a
+*.lib
+
+# Other
+*.exe
+*.pyc
+__pycache__/
+
+# Ignore docs build outputs
+/docs/_build/
+
+# Ignore test outputs
+tests/build/
+
+# Ignore middleware build outputs
+middleware/build/
+
+# Ignore drivers build outputs
+drivers/build/
+
+# Ignore platform build outputs
+platform/stm32g0b0/build/
+
+# Ignore app build outputs
+app/build/
+
+# Ignore CMake generated folders
+CMakeScratch/
+pkgRedirects/
+
+# Ignore backup files
+*~
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore other IDE settings
+.idea/
+
+# Ignore logs
+*.log
+
+# Ignore firmware images
+*.img
+*.bin
+
+# Ignore generated files
+*.generated
+
+# Ignore coverage reports
+coverage/
+*.gcda
+*.gcno
+*.gcov
+
+# Ignore Python virtual environments
+venv/
+.env/
+
+# Ignore node_modules
+node_modules/
+
+# Ignore temporary files
+*.tmp
+*.temp
+
+# Ignore archive files
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# Ignore by default
+# Uncomment if you want to ignore everything except tracked files
+#/*
