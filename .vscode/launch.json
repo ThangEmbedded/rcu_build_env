@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug STM32G0B0",
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "stlink",
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/build_system_1/build/output/universal_io_stm32g0b0.elf",
+            "device": "STM32G0B0RE",
+            "interface": "swd",
+            "runToEntryPoint": "main",
+            "svdFile": "${workspaceFolder}/svd/STM32G0B0.svd",
+            "showDevDebugOutput": "none"
+        }
+    ]
+}
