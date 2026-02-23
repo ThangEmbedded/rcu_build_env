@@ -21,7 +21,7 @@ int main(void) {
     // Giả sử đã có hàm HAL_GPIO_TogglePin và cấu hình GPIOC, pin 8
     while(1) {
         HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_8);
-        _delay_ms(500);
+        _delay_ms(5000);
     }
     return 0;
 }
