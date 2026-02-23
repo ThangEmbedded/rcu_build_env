@@ -7,7 +7,7 @@
             "request": "launch",
             "servertype": "stlink",
             "cwd": "${workspaceFolder}",
-            "executable": "${workspaceFolder}/build_system_1/build/output/universal_io_stm32g0b0.elf",
+            "executable": "${workspaceFolder}/build_system_2/build/universal_io.elf",
             "device": "STM32G0B0RE",
             "interface": "swd",
             "runToEntryPoint": "main",
