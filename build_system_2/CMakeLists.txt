@@ -37,22 +37,22 @@ add_compile_definitions(
 # INCLUDE PATHS
 # =============================
 include_directories(
-    platform/stm32_g0b0/Inc
-    platform/stm32_g0b0/Drivers/STM32G0xx_HAL_Driver/Inc
-    platform/stm32_g0b0/Drivers/STM32G0xx_HAL_Driver/Inc/Legacy
-    platform/stm32_g0b0/Drivers/CMSIS/Include
-    platform/stm32_g0b0/Drivers/CMSIS/Device/ST/STM32G0xx/Include
+    platform/mcu/stm32g0b0/Inc
+    platform/mcu/stm32g0b0/Drivers/STM32G0xx_HAL_Driver/Inc
+    platform/mcu/stm32g0b0/Drivers/STM32G0xx_HAL_Driver/Inc/Legacy
+    platform/mcu/stm32g0b0/Drivers/CMSIS/Include
+    platform/mcu/stm32g0b0/Drivers/CMSIS/Device/ST/STM32G0xx/Include
 )
 
 # =============================
 # HAL SOURCES
 # =============================
 file(GLOB_RECURSE HAL_SOURCES
-    platform/stm32_g0b0/Drivers/STM32G0xx_HAL_Driver/Src/*.c
+    platform/mcu/stm32g0b0/Drivers/STM32G0xx_HAL_Driver/Src/*.c
 )
 
 file(GLOB_RECURSE CORE_SOURCES
-    platform/stm32_g0b0/Src/*.c
+    platform/mcu/stm32g0b0/Src/*.c
 )
 
 # =============================
@@ -62,7 +62,7 @@ add_executable(${PROJECT_NAME}.elf
     app/app_main.c
     ${HAL_SOURCES}
     ${CORE_SOURCES}
-    platform/stm32_g0b0/startup_stm32g0b0xx.s
+    platform/mcu/stm32g0b0/startup_stm32g0b0xx.s
 )
 
 # =============================
@@ -70,7 +70,7 @@ add_executable(${PROJECT_NAME}.elf
 # =============================
 target_link_options(${PROJECT_NAME}.elf PRIVATE
     ${MCU_FLAGS}
-    -T${CMAKE_SOURCE_DIR}/platform/stm32_g0b0/STM32G0B0XX_FLASH.ld
+    -T${CMAKE_SOURCE_DIR}/platform/mcu/stm32g0b0/STM32G0B0XX_FLASH.ld
     -Wl,--gc-sections
 )
 
